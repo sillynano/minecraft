@@ -1,5 +1,5 @@
 # Minecraft Information Website
-
+ 
 A simple, informative website about Minecraft created with HTML, CSS, and JavaScript.
 
 ## Overview
@@ -27,3 +27,4 @@ This website provides detailed information about Minecraft, including its featur
 - CSS3
 - JavaScript
 - Google Fonts (Quicksand)
+
