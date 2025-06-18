@@ -17,7 +17,7 @@ body {
 
 /* Navigation positioned to top right */
 nav {
-    position: relative;
+    position: fixed         ;
     top: 20px;
     right: 20px;
     z-index: 1000;
@@ -60,36 +60,25 @@ button {
     bottom: 10px;
     left: 20px;
     margin: 0 20px; /* Add horizontal spacing between buttons */
+    text-align: center;
 }
 
 /* Top Bar Styling */
 .top-bar {
-    position: relative;
+    position:fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #4CAF50; /* Green background */
+    height: 100px; /* Height of the top bar */
     color: white; /* Text color */
     padding: 30px 20px; /* Space inside the bar, reduced padding */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
     font-size: 2.5rem; /* Font size for the top bar */
     font-family: 'Quicksand', sans-serif; /* Font family */
     text-align: center; /* Centered text */
+    background: linear-gradient(to top, #2E7D32 25%, #4CAF50 75%);
 }
 
-.secondary-bar {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #2a612c; /* Green background */
-    color: white; /* Text color */
-    padding: 50px 40px; /* Space inside the bar, reduced padding */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
-    font-size: 2.5rem; /* Font size for the top bar */
-    font-family: 'Quicksand', sans-serif; /* Font family */
-    text-align: center; /* Centered text */
-}
 
 
 .title {
