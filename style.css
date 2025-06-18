@@ -82,9 +82,9 @@ button {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #4CAF50; /* Green background */
+    background-color: #2a612c; /* Green background */
     color: white; /* Text color */
-    padding: 30px 20px; /* Space inside the bar, reduced padding */
+    padding: 50px 40px; /* Space inside the bar, reduced padding */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
     font-size: 2.5rem; /* Font size for the top bar */
     font-family: 'Quicksand', sans-serif; /* Font family */
