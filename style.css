@@ -1,12 +1,11 @@
 h1 {
     font-size: 2rem;
 }
-@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 
 body {
-    font-family: 'Press Start 2P', 'Quicksand', monospace;
+    font-family: 'Press Start 2P', monospace;
     margin-left: 20px; /* Increased left margin */
     padding-top: 140px; /* Space for the top bar (its height + padding) */
     text-align: left; /* Ensure all text is left-aligned */
