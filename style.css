@@ -47,12 +47,6 @@ nav ul li {
     align-items: center;
 }
 
-.nav-copyright {
-    margin-top: 10px;
-    font-size: 6px;
-    color: #FFFFFF;
-    text-shadow: 1px 1px 0px #000000;
-}
 
 nav ul li a {
     text-decoration: none;
@@ -90,12 +84,12 @@ button {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px; /* Height of the top bar */
+    height: 75px; /* Height of the top bar */
     color: #FFFFFF; /* White text */
     padding: 30px 20px; /* Space inside the bar, reduced padding */
     box-shadow: 0 5px 0px #1B5E20; /* Blocky shadow instead of blur */
     font-size: 2rem; /* Font size for the top bar */
-    font: 'Press Start 2P', monospace;
+    font-family: 'Press Start 2P', monospace;
     text-align: center; /* Centered text */
     background: linear-gradient(to bottom, 
         #4CAF50 0%, 

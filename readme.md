@@ -12,6 +12,7 @@ This website provides detailed information about Minecraft, including its featur
 - **Minecraft Information**: General information about Minecraft, its history, and popularity
 - **Features**: Detailed information about different aspects of Minecraft:
 - **Contact**: How to Contact Me!
+- **Extras**: More stuff!
   - Biomes
   - Mobs
   - Updates
