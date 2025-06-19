@@ -95,7 +95,7 @@ button {
     padding: 30px 20px; /* Space inside the bar, reduced padding */
     box-shadow: 0 5px 0px #1B5E20; /* Blocky shadow instead of blur */
     font-size: 2rem; /* Font size for the top bar */
-    font-family: 'Press Start 2P', monospace;
+    font: 'Press Start 2P', monospace;
     text-align: center; /* Centered text */
     background: linear-gradient(to bottom, 
         #4CAF50 0%, 
@@ -115,6 +115,19 @@ button {
     max-width: 800px; /* Limit width for better readability */
     line-height: 1.6; /* Better spacing for pixel font */
     text-shadow: 2px 2px 0px #000000; /* Retro text shadow */
+    margin-bottom: 10px;
+
+    
+}
+
+/* Minecraft Logo Styling */
+.minecraft-logo {
+    width: 400px; /* Set specific width */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 20px; /* Align with text */
+    margin-top: 20px; /* Add some space above */
+    border: 3px solid #2E7D32; /* Minecraft-style border */
+    box-shadow: 3px 3px 0px #1B5E20; /* Blocky shadow */
 }
 
 /* Content positioning */

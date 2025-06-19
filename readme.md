@@ -11,6 +11,7 @@ This website provides detailed information about Minecraft, including its featur
 - **Home**: Introduction to the website
 - **Minecraft Information**: General information about Minecraft, its history, and popularity
 - **Features**: Detailed information about different aspects of Minecraft:
+- **Contact**: How to Contact Me!
   - Biomes
   - Mobs
   - Updates
@@ -31,5 +32,5 @@ This website provides detailed information about Minecraft, including its featur
 - HTML5
 - CSS3
 - JavaScript
-- Google Fonts (Quicksand)
+- Font Press Start 2P
 
