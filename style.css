@@ -74,7 +74,7 @@ button {
     padding: 30px 20px; /* Space inside the bar, reduced padding */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
     font-size: 2.5rem; /* Font size for the top bar */
-    font-family: 'Quicksand', sans-serif; /* Font family */
+    font-family: 'Quicksand', sans-serif;
     text-align: center; /* Centered text */
     background: linear-gradient(to top, #2E7D32 25%, #4CAF50 75%);
 }

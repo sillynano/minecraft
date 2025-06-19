@@ -20,6 +20,11 @@ This website provides detailed information about Minecraft, including its featur
   - Farming
   - Enchanting
   - Crafting
+  - Exploration
+  - Community and Modding
+  - The Overworld
+  - The Nether
+  - The End
 
 ## Technologies Used
 
