@@ -129,8 +129,126 @@ body {
     padding-top: 140px; /* Space for the top bar (its height + padding) */
 }
 
+/* Block Building Intro */
+.intro-blocks {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
 
-// Add to existing CSS
+/* Intro Overlay Styles */
+#intro-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #2E7D32, #1B5E20, #4CAF50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeOut 3s ease-in-out 2s forwards;
+}
+
+.intro-content {
+    text-align: center;
+    color: white;
+    animation: slideUp 1s ease-out;
+}
+
+.intro-logo {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+    animation: bounce 2s infinite;
+}
+
+.intro-title {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 0px #000;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.loading-bar {
+    width: 300px;
+    height: 20px;
+    background-color: #333;
+    border: 2px solid #fff;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.loading-progress {
+    height: 100%;
+    background: linear-gradient(90deg, #4CAF50, #8BC34A);
+    width: 0%;
+    animation: fillBar 2s ease-in-out forwards;
+}
+
+.intro-text {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 12px;
+    margin-top: 20px;
+    animation: blink 1s infinite;
+}
+
+/* Intro Animations */
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    80% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 2px 2px 0px #000, 0 0 10px #4CAF50;
+    }
+    to {
+        text-shadow: 2px 2px 0px #000, 0 0 20px #8BC34A, 0 0 30px #4CAF50;
+    }
+}
+
+@keyframes fillBar {
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
 
 /* Block Building Intro */
 .intro-blocks {

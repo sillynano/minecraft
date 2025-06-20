@@ -8,26 +8,27 @@
     <script src="/script.js" defer></script>
 </head>
 <body>
-    
-
-<div class="intro-content">
-    <img src="minecraft-logo.jpg" alt="Minecraft Logo" class="intro-logo">
-    <h1 class="intro-title">Welcome to Minecraft World</h1>
-    
-    <!-- Add building blocks animation -->
-    <div class="intro-blocks">
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
+    <!-- Add intro overlay -->
+    <div id="intro-overlay">
+        <div class="intro-content">
+            <img src="https://ukstories.microsoft.com/wp-content/uploads/2018/04/Minecraft_Horizontal-Key-Art.jpg" alt="Minecraft Logo" class="intro-logo">
+            <h1 class="intro-title">Welcome!</h1>
+            
+            <!-- Add building blocks animation -->
+            <div class="intro-blocks">
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+            </div>
+            
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <p class="intro-text">Loading blocks...</p>
+        </div>
     </div>
-    
-    <div class="loading-bar">
-        <div class="loading-progress"></div>
-    </div>
-    <p class="intro-text">Loading blocks...</p>
-</div>
 
 
     <!-- Top Bar -->
@@ -50,5 +51,23 @@
     <p class="hometext">If you have any suggestions or feedback, feel free to reach out to me through the contact page.</p>
     
     <img src="https://ukstories.microsoft.com/wp-content/uploads/2018/04/Minecraft_Horizontal-Key-Art.jpg" alt="Minecraft Logo" class="minecraft-logo">
+
+    <script>
+        // Hide intro after animation completes
+        setTimeout(() => {
+            const intro = document.getElementById('intro-overlay');
+            if (intro) {
+                intro.style.display = 'none';
+            }
+        }, 4000);
+
+        // Optional: Click to skip intro
+        const introOverlay = document.getElementById('intro-overlay');
+        if (introOverlay) {
+            introOverlay.addEventListener('click', () => {
+                introOverlay.style.display = 'none';
+            });
+        }
+    </script>
 </body>
 </html>
