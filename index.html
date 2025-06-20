@@ -12,7 +12,7 @@
     <div id="intro-overlay">
         <div class="intro-content">
             <img src="https://ukstories.microsoft.com/wp-content/uploads/2018/04/Minecraft_Horizontal-Key-Art.jpg" alt="Minecraft Logo" class="intro-logo">
-            <h1 class="intro-title">Welcome!</h1>
+            <h1 class="intro-title">Welcome to Wiki Craft!</h1>
             
             <!-- Add building blocks animation -->
             <div class="intro-blocks">
@@ -31,8 +31,13 @@
     </div>
 
 
+    <!-- Main content -->
+    <div id="main-content" class="main-content">
+
+
     <!-- Top Bar -->
     <header class="top-bar">Wiki Craft</header>
+
 
     <!-- Navigation Tabs -->
     <nav>
@@ -43,21 +48,53 @@
             <li><a href="/contact">Contact</a></li>
             <li><a href="/Extras">Extras</a></li>
         </ul>
-    </nav>
-    <!-- Home Page -->
-    <h1>Welcome to my Website!</h1>
-    <p class="hometext">Here you can find information about Minecraft, including its features, gameplay, and more.</p>
-    <p class="hometext">This site is a work in progress, so please be patient as I add more content.</p> 
-    <p class="hometext">If you have any suggestions or feedback, feel free to reach out to me through the contact page.</p>
+    </nav>    <!-- Home Page -->
+    <section class="hero-section">
+        <h1>Welcome to Wiki Craft!</h1>
+        <p class="hometext hero-text">🎮 Your ultimate destination for everything Minecraft!</p>
+        <p class="hometext">Discover the endless possibilities of the blocky universe - from basic crafting recipes to advanced redstone contraptions, epic builds to hidden secrets.</p>
+    </section>
+    
+    <section class="content-section">
+        <h2>What You'll Find Here</h2>
+        <p class="hometext">📚 <strong>Comprehensive Guides:</strong> Learn about biomes, mobs, crafting, and game mechanics</p>
+        <p class="hometext">🏗️ <strong>Building Inspiration:</strong> Discover amazing structures and get creative ideas</p>
+        <p class="hometext">⚡ <strong>Latest Updates:</strong> Stay up-to-date with the newest Minecraft features</p>
+        <p class="hometext">💬 <strong>Community:</strong> Connect with fellow Minecraft enthusiasts</p>
+    </section>
+    
+    <section class="cta-section">
+        <p class="hometext">🚧 <em>This site is constantly growing! Check back regularly for new content, and don't hesitate to reach out through our contact page with suggestions or feedback.</em></p>
+    </section>
     
     <img src="https://ukstories.microsoft.com/wp-content/uploads/2018/04/Minecraft_Horizontal-Key-Art.jpg" alt="Minecraft Logo" class="minecraft-logo">
+    
+    </div> <!-- End main-content -->
+
+
+
+
+
+
 
     <script>
-        // Hide intro after animation completes
+        // Hide main content initially
+        document.addEventListener('DOMContentLoaded', () => {
+            const mainContent = document.getElementById('main-content');
+            if (mainContent) {
+                mainContent.style.display = 'none';
+            }
+        });
+
+        // Hide intro and show main content after animation completes
         setTimeout(() => {
             const intro = document.getElementById('intro-overlay');
+            const mainContent = document.getElementById('main-content');
             if (intro) {
                 intro.style.display = 'none';
+            }
+            if (mainContent) {
+                mainContent.style.display = 'block';
             }
         }, 4000);
 
@@ -65,7 +102,11 @@
         const introOverlay = document.getElementById('intro-overlay');
         if (introOverlay) {
             introOverlay.addEventListener('click', () => {
+                const mainContent = document.getElementById('main-content');
                 introOverlay.style.display = 'none';
+                if (mainContent) {
+                    mainContent.style.display = 'block';
+                }
             });
         }
     </script>
